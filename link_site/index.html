@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>.:Bloom Sunglasses:.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta content="Bloom Sunglasses" name='description'/>
+<meta content="Bloom Sunglasses" name='keywords'/>
+<meta content='PT-BR' name='language'/>
+<link rel="shortcut icon" href="bloom.ico"/>
+
+<script language="javascript">
+
+x=screen.width; 
+y=screen.height;
+
+if (x < 800)
+{
+	window.location = "error2.php";
+}
+
+Mensagem = "Seja Bem Vindo...";
+Espacos = "  ";
+Posicao = 0;
+
+function RolaMensagem()
+{
+    window.status = Mensagem.substring(Posicao, Mensagem.length)
++ Espacos + Mensagem.substring(0, Posicao);     Posicao ++;
+
+   if (Posicao > Mensagem.length) Posicao = 0; 
+
+    window.setTimeout("RolaMensagem()", 200);
+}
+RolaMensagem();
+
+<!--
+
+</script>
+
+</head>
+<frameset rows="100%,*" frameborder="NO">
+<frame noresize src="http://www.holodek.com.br/bloom/" frameborder="NO" name="main_Frame">
+<frame noresize src="" frameborder="NO">
+</frameset>
+<noframes> 
+<body bgcolor="#FFFFFF" text="#000000">
+<p align="center">Seu navegador não suporta frames.</p>
+</body>
+</noframes> 
+</html>
